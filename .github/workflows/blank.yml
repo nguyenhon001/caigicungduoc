@@ -32,7 +32,6 @@ jobs:
         copy wallpaper.png D:\a\wallpaper.png
         copy wallpaper.bat D:\a\wallpaper.bat
         copy Rooller.rar D:\a\Rooller.rar
-        Expand-Archive D:\a\Rooller.rar
     - name: Open Tunnel.
       run: |
         Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
